@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar color="primary">
-    <ion-title>View Feedbacks</ion-title>
+    <ion-title>Insights</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -8,10 +8,24 @@
 
   <ion-card no-padding>
     <ion-card-content no-padding>
-      <ion-card-title text-center color="pink">Avg. Manager Rating</ion-card-title>
+      <ion-card-title text-center color="pink">Manager Rating as rated by their Reportee</ion-card-title>
       <canvas #barCanvas1 width="400" height="300" padding></canvas>
     </ion-card-content>
   </ion-card>
+
+  <div padding></div>
+
+  <ion-item>
+    <ion-label text-wrap color="pink">Manager Skills as rated by Employee Level</ion-label>
+    <div padding></div>
+    <ion-select (ionChange)="onSkillSelect($event)">
+      <ion-option>Entry Level Associate</ion-option>
+      <ion-option>Lower Management</ion-option>
+      <ion-option>Middle Management</ion-option>
+      <ion-option>Upper Management</ion-option>
+      <ion-option>Leadership</ion-option>
+    </ion-select>
+  </ion-item>
 
   <div padding></div>
 
@@ -22,6 +36,18 @@
     </ion-card-content>
   </ion-card>
 
+  <div padding></div>
+
+  <ion-card no-padding [style.display]="selectedSkill ? 'block' : 'none'">
+    <ion-card-content no-padding>
+      <ion-card-title text-center color="pink" style="font-size: 2.0rem">Skill Rating ({{ selectedSkill }}):</ion-card-title>
+      <canvas #skillRatingCanvas width="400" height="300" padding></canvas>
+    </ion-card-content>
+  </ion-card>
+
+  <div padding></div>
+  <div padding></div>
+  <div padding></div>
   <div padding></div>
 
 </ion-content>

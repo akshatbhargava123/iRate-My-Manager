@@ -20,7 +20,7 @@
     </ion-grid>
   </button>
 
-  <div style="margin-top: 20px"></div>
+  <div style="margin-top: 10px"></div>
 
   <button ion-button color="light" block (click)="viewFeedbacks()">
     <ion-grid>
@@ -29,13 +29,28 @@
           <ion-icon name="list-box" color="primary"></ion-icon>
         </ion-col>
         <ion-col col-auto>
-          View Feedbacks
+          Insights
         </ion-col>
       </ion-row>
     </ion-grid>
   </button>
 
-  <div style="margin-top: 20px"></div>
+  <div style="margin-top: 10px"></div>
+
+  <button ion-button color="light" block navPush="AboutPage">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-3>
+          <ion-icon name="information-circle" color="primary"></ion-icon>
+        </ion-col>
+        <ion-col col-auto>
+          About iRate
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </button>
+
+  <div style="margin-top: 10px"></div>
 
   <button ion-button color="light" block (click)="logout()">
     <ion-grid>

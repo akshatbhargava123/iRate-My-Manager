@@ -1,6 +1,8 @@
 import { Component, ViewChild } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { IonicPage, Slides, NavController } from 'ionic-angular';
+import { IonicPage, Slides, NavController, ModalController } from 'ionic-angular';
+
+import { INDUSTRIES } from '../../app/industry-list';
 
 import { CommonProvider } from '../../providers/common/common';
 import { BackendProvider } from '../../providers/backend/backend';
@@ -14,6 +16,8 @@ import { Feedback } from '../../app/app.model';
 export class FeedbackFormPage {
 
   @ViewChild(Slides) slides: Slides;
+
+  industryList = INDUSTRIES;
 
   managerBehaviour = [];
   managerSkills: any = [
@@ -46,7 +50,8 @@ export class FeedbackFormPage {
     private navCtrl: NavController,
     private formBuilder: FormBuilder,
     private common: CommonProvider,
-    private backend: BackendProvider
+    private backend: BackendProvider,
+    private modalCtrl: ModalController
   ) { }
 
   ionViewWillLoad() {
@@ -62,7 +67,19 @@ export class FeedbackFormPage {
   }
 
   ionViewDidLoad() {
-    this.slides.lockSwipes(true);
+    // this.slides.lockSwipes(true);
+  }
+
+  openSuggestion() {
+    const modal = this.modalCtrl.create('CompanySelectorPage', null, {
+      showBackdrop: true
+    });
+    modal.present();
+    modal.onDidDismiss(data => {
+      if (!data) return;
+      this.personalDetails.controls.company.setValue(data.name);
+      this.personalDetails.controls.companyLocation.setValue(data.location);
+    });
   }
 
   getCurrentSlide() {

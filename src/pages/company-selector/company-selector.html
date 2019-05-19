@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-buttons end>
+      <button ion-button icon-only (click)="close()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Select Company</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-searchbar
+    animated="true"
+    autocomplete="on"
+    autocorrect="on"
+    placeholder="Start typing name or location"
+    showCancelButton="true"
+    type="text"
+    [(ngModel)]="searchQuery"
+    (ionInput)="getItems($event)"
+  >
+  </ion-searchbar>
+  
+  <ion-list>
+    <button ion-item color="light" *ngFor="let suggestion of suggestions" style="margin: 4px" (click)="selected(suggestion)">
+      <h4 style="color: black">{{ suggestion.name | titlecase }},&nbsp;&nbsp;<span>{{ suggestion.location }}</span></h4>
+    </button>
+    <button ion-item color="light" style="margin: 4px" (click)="selected()" *ngIf="searchQuery.length">
+      <h4 style="color: black">{{ searchQuery | titlecase }}</h4>
+    </button>
+  </ion-list>
+
+</ion-content>

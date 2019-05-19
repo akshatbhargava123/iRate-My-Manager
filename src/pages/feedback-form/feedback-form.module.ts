@@ -9,7 +9,7 @@ import { ComponentsModule } from '../../components/components.module';
   ],
   imports: [
     ComponentsModule,
-    IonicPageModule.forChild(FeedbackFormPage),
+    IonicPageModule.forChild(FeedbackFormPage)
   ],
 })
 export class FeedbackFormPageModule {}

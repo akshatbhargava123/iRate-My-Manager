@@ -42,45 +42,258 @@ export class ViewFeedbacksPage {
   };
 
   behaviourRating = {
-    'friendly': 0,
-    'angry': 0,
-    'neutral': 0,
-    'busy': 0,
-    'lazy': 0,
-    'partial': 0
+    'Friendly': 0,
+    'Angry': 0,
+    'Neutral': 0,
+    'Busy': 0,
+    'Lazy': 0,
+    'Partial': 0
   };
 
   skillsRating = {
-    'Excellent Communicator': {
-      total: 0,
-      average: 0,
-      length: 0
+    'Entry Level Associate': {
+      'Excellent Communicator': {
+        'Strongly Agree': 0,
+        'Agree': 0,
+        'Can Not Say': 0,
+        'Disagree': 0,
+        'Strongly Disagree': 0,
+      },
+      'Knows his/her job': {
+        'Strongly Agree': 0,
+        'Agree': 0,
+        'Can Not Say': 0,
+        'Disagree': 0,
+        'Strongly Disagree': 0,
+      },
+      'Soft Spoken': {
+        'Strongly Agree': 0,
+        'Agree': 0,
+        'Can Not Say': 0,
+        'Disagree': 0,
+        'Strongly Disagree': 0,
+      },
+      'Supportive': {
+        'Strongly Agree': 0,
+        'Agree': 0,
+        'Can Not Say': 0,
+        'Disagree': 0,
+        'Strongly Disagree': 0,
+      },
+      'Fearless': {
+        'Strongly Agree': 0,
+        'Agree': 0,
+        'Can Not Say': 0,
+        'Disagree': 0,
+        'Strongly Disagree': 0,
+      },
+      'Motivator': {
+        'Strongly Agree': 0,
+        'Agree': 0,
+        'Can Not Say': 0,
+        'Disagree': 0,
+        'Strongly Disagree': 0,
+      },
     },
-    'Knows his/her job': {
-      total: 0,
-      average: 0,
-      length: 0
+    'Lower Management': {
+      'Excellent Communicator': {
+        'Strongly Agree': 0,
+        'Agree': 0,
+        'Can Not Say': 0,
+        'Disagree': 0,
+        'Strongly Disagree': 0,
+      },
+      'Knows his/her job': {
+        'Strongly Agree': 0,
+        'Agree': 0,
+        'Can Not Say': 0,
+        'Disagree': 0,
+        'Strongly Disagree': 0,
+      },
+      'Soft Spoken': {
+        'Strongly Agree': 0,
+        'Agree': 0,
+        'Can Not Say': 0,
+        'Disagree': 0,
+        'Strongly Disagree': 0,
+      },
+      'Supportive': {
+        'Strongly Agree': 0,
+        'Agree': 0,
+        'Can Not Say': 0,
+        'Disagree': 0,
+        'Strongly Disagree': 0,
+      },
+      'Fearless': {
+        'Strongly Agree': 0,
+        'Agree': 0,
+        'Can Not Say': 0,
+        'Disagree': 0,
+        'Strongly Disagree': 0,
+      },
+      'Motivator': {
+        'Strongly Agree': 0,
+        'Agree': 0,
+        'Can Not Say': 0,
+        'Disagree': 0,
+        'Strongly Disagree': 0,
+      },
     },
-    'Soft Spoken': {
-      total: 0,
-      average: 0,
-      length: 0
+    'Middle Management': {
+      'Excellent Communicator': {
+        'Strongly Agree': 0,
+        'Agree': 0,
+        'Can Not Say': 0,
+        'Disagree': 0,
+        'Strongly Disagree': 0,
+      },
+      'Knows his/her job': {
+        'Strongly Agree': 0,
+        'Agree': 0,
+        'Can Not Say': 0,
+        'Disagree': 0,
+        'Strongly Disagree': 0,
+      },
+      'Soft Spoken': {
+        'Strongly Agree': 0,
+        'Agree': 0,
+        'Can Not Say': 0,
+        'Disagree': 0,
+        'Strongly Disagree': 0,
+      },
+      'Supportive': {
+        'Strongly Agree': 0,
+        'Agree': 0,
+        'Can Not Say': 0,
+        'Disagree': 0,
+        'Strongly Disagree': 0,
+      },
+      'Fearless': {
+        'Strongly Agree': 0,
+        'Agree': 0,
+        'Can Not Say': 0,
+        'Disagree': 0,
+        'Strongly Disagree': 0,
+      },
+      'Motivator': {
+        'Strongly Agree': 0,
+        'Agree': 0,
+        'Can Not Say': 0,
+        'Disagree': 0,
+        'Strongly Disagree': 0,
+      },
     },
-    'Supportive': {
-      total: 0,
-      average: 0,
-      length: 0
+    'Upper Management': {
+      'Excellent Communicator': {
+        'Strongly Agree': 0,
+        'Agree': 0,
+        'Can Not Say': 0,
+        'Disagree': 0,
+        'Strongly Disagree': 0,
+      },
+      'Knows his/her job': {
+        'Strongly Agree': 0,
+        'Agree': 0,
+        'Can Not Say': 0,
+        'Disagree': 0,
+        'Strongly Disagree': 0,
+      },
+      'Soft Spoken': {
+        'Strongly Agree': 0,
+        'Agree': 0,
+        'Can Not Say': 0,
+        'Disagree': 0,
+        'Strongly Disagree': 0,
+      },
+      'Supportive': {
+        'Strongly Agree': 0,
+        'Agree': 0,
+        'Can Not Say': 0,
+        'Disagree': 0,
+        'Strongly Disagree': 0,
+      },
+      'Fearless': {
+        'Strongly Agree': 0,
+        'Agree': 0,
+        'Can Not Say': 0,
+        'Disagree': 0,
+        'Strongly Disagree': 0,
+      },
+      'Motivator': {
+        'Strongly Agree': 0,
+        'Agree': 0,
+        'Can Not Say': 0,
+        'Disagree': 0,
+        'Strongly Disagree': 0,
+      },
     },
-    'Fearless': {
-      total: 0,
-      average: 0,
-      length: 0
+    'Leadership': {
+      'Excellent Communicator': {
+        'Strongly Agree': 0,
+        'Agree': 0,
+        'Can Not Say': 0,
+        'Disagree': 0,
+        'Strongly Disagree': 0,
+      },
+      'Knows his/her job': {
+        'Strongly Agree': 0,
+        'Agree': 0,
+        'Can Not Say': 0,
+        'Disagree': 0,
+        'Strongly Disagree': 0,
+      },
+      'Soft Spoken': {
+        'Strongly Agree': 0,
+        'Agree': 0,
+        'Can Not Say': 0,
+        'Disagree': 0,
+        'Strongly Disagree': 0,
+      },
+      'Supportive': {
+        'Strongly Agree': 0,
+        'Agree': 0,
+        'Can Not Say': 0,
+        'Disagree': 0,
+        'Strongly Disagree': 0,
+      },
+      'Fearless': {
+        'Strongly Agree': 0,
+        'Agree': 0,
+        'Can Not Say': 0,
+        'Disagree': 0,
+        'Strongly Disagree': 0,
+      },
+      'Motivator': {
+        'Strongly Agree': 0,
+        'Agree': 0,
+        'Can Not Say': 0,
+        'Disagree': 0,
+        'Strongly Disagree': 0,
+      },
     },
-    'Motivator': {
-      total: 0,
-      average: 0,
-      length: 0
-    },
+  };
+
+  SKILL_MAP = {
+    'Strongly Agree': 5,
+    'Agree': 4,
+    'Can Not Say': 3,
+    'Disagree': 2,
+    'Strongly Disagree': 1,
+    'undefined': 0
+  }
+
+  chartOptions = {
+    scales: {
+      yAxes: [
+        {
+          ticks: {
+            stepSize: 1,
+            min: 0,
+            max: 5
+          }
+        }
+      ]
+    }
   };
 
   LIGHT_COLORS = [
@@ -107,6 +320,11 @@ export class ViewFeedbacksPage {
   @ViewChild('barCanvas2') barCanvas2;
   barChart2: any;
 
+  selectedSkill: 'Entry Level Associate' | 'Lower Management' | 'Middle Management' | 'Upper Management' | 'Leadership'
+
+  @ViewChild('skillRatingCanvas') skillRatingCanvas;
+  skillRatingChart: any;
+
   constructor(
     private navCtrl: NavController,
     private navParams: NavParams,
@@ -114,7 +332,8 @@ export class ViewFeedbacksPage {
   ) { }
 
   ionViewWillLoad() {
-    const company = this.navParams.get('company');
+    // localStorage.setItem('company', JSON.stringify(this.navParams.get('company')));
+    const company = this.navParams.get('company')/* || JSON.parse(localStorage.getItem('company'))*/;
     this.backend.getFeedbacks().subscribe(feedbacks => {
       this.feedbacks = feedbacks.filter(feedback => feedback.personalDetails.company == company);
 
@@ -126,17 +345,45 @@ export class ViewFeedbacksPage {
 
         // calculate average manager behavioural rating
         Object.keys(this.behaviourRating).forEach(key => {
-          if (feedback.managerBehaviour.indexOf(key) != -1) {
+          if (feedback.managerBehaviour.indexOf(key.toLowerCase()) != -1) {
             this.behaviourRating[key] += 1;
           };
         });
 
-        // calculate average manager skills rating
-        // feedback.managerSkills.forEach(skill => {
-        //   this.skillsRating[skill.name].total += skill.value;
-        //   this.skillsRating[skill.name].length += 1;
-        // });
-        
+        const levels = ['Excellent Communicator', 'Knows his/her job', 'Soft Spoken', 'Supportive', 'Fearless', 'Motivator'];
+        levels.forEach(level => {
+          const { value } = feedback.managerSkills.find(f => f.name == level);
+
+        })
+
+      });
+
+      // skill rating
+      Object.keys(this.skillsRating).forEach(desigKey => {
+        const filteredFeedbacks = this.feedbacks.filter(f => f.personalDetails.designation == desigKey);
+
+        filteredFeedbacks.forEach(feedback => {
+          this.skillsRating[desigKey][feedback.managerSkills[0].name][feedback.managerSkills[0].value] += 1;
+          this.skillsRating[desigKey][feedback.managerSkills[1].name][feedback.managerSkills[1].value] += 1;
+          this.skillsRating[desigKey][feedback.managerSkills[2].name][feedback.managerSkills[2].value] += 1;
+          this.skillsRating[desigKey][feedback.managerSkills[3].name][feedback.managerSkills[3].value] += 1;
+          this.skillsRating[desigKey][feedback.managerSkills[4].name][feedback.managerSkills[4].value] += 1;
+          this.skillsRating[desigKey][feedback.managerSkills[5].name][feedback.managerSkills[5].value] += 1;
+        });
+
+      });
+
+      Object.keys(this.skillsRating).forEach(desigKey => {
+        Object.keys(this.skillsRating[desigKey]).forEach(skillKey => {
+          const largest = Object.keys(this.skillsRating[desigKey][skillKey]).reduce((largest, curr) => {
+            const skill = this.skillsRating[desigKey][skillKey];
+            if (skill[curr] == 0) return largest;
+            if (largest == 'undefined') return curr;
+            return skill[largest] < skill[curr] ? curr : largest;
+          }, 'undefined')
+          this.skillsRating[desigKey][skillKey].largest = this.SKILL_MAP[largest];
+          // console.log(desigKey, skillKey, ' : ', this.skillsRating[desigKey][skillKey].largest);
+        });
       });
 
       // calculate average star rating
@@ -145,13 +392,6 @@ export class ViewFeedbacksPage {
         this.starRating[key].average = this.starRating[key].average || 0;
         // console.log(this.starRating[key].average);
       });
-
-      // calculate average skills rating
-      // Object.keys(this.skillsRating).forEach(key => {
-      //   this.skillsRating[key].average = this.skillsRating[key].total / this.skillsRating[key].length;
-      //   this.skillsRating[key].average = this.starRating[key].average || 0;
-      //   // console.log(this.skillsRating[key].average);
-      // });
 
       this.initCharts();
     });
@@ -172,6 +412,7 @@ export class ViewFeedbacksPage {
   }
 
   initCharts() {
+
     // Avg Manager Star Rating
     this.barChart1 = new Chart(this.barCanvas1.nativeElement, {
       type: 'bar',
@@ -185,19 +426,7 @@ export class ViewFeedbacksPage {
           this.getDataInstance('Leadership', this.starRating['Leadership'].average, 4)
         ]
       },
-      options: {
-        scales: {
-          yAxes: [
-            {
-              ticks: {
-                stepSize: 1,
-                min: 0,
-                max: 5
-              }
-            }
-          ]
-        }
-      }
+      options: this.chartOptions
     });
 
     // Avg Manager Behavioural Rating
@@ -206,26 +435,45 @@ export class ViewFeedbacksPage {
       data: {
         labels: [''],
         datasets: [
-          this.getDataInstance('friendly', this.behaviourRating.friendly, 0),
-          this.getDataInstance('angry', this.behaviourRating.angry, 1),
-          this.getDataInstance('neutral', this.behaviourRating.neutral, 2),
-          this.getDataInstance('busy', this.behaviourRating.busy, 3),
-          this.getDataInstance('lazy', this.behaviourRating.lazy, 4),
-          this.getDataInstance('partial', this.behaviourRating.partial, 5)
+          this.getDataInstance('Friendly', this.behaviourRating.Friendly, 0),
+          this.getDataInstance('Angry', this.behaviourRating.Angry, 1),
+          this.getDataInstance('Neutral', this.behaviourRating.Neutral, 2),
+          this.getDataInstance('Busy', this.behaviourRating.Busy, 3),
+          this.getDataInstance('Lazy', this.behaviourRating.Lazy, 4),
+          this.getDataInstance('Partial', this.behaviourRating.Partial, 5)
         ]
       },
-      options: {
-        scales: {
-          yAxes: [
-            {
-              ticks: {
-                min: 0
-              }
-            }
-          ]
-        }
-      }
+      options: this.chartOptions
     });
+
+    this.skillRatingChart = new Chart(this.skillRatingCanvas.nativeElement, {
+      type: 'bar',
+      data: {
+        labels: [''],
+        datasets: []
+      },
+      options: this.chartOptions
+    });
+
+  }
+
+  onSkillSelect(desig) {
+
+    this.selectedSkill = desig;
+    // console.log(this.skillsRating[desig]);
+
+    // empty dataset
+    this.skillRatingChart.data.datasets.forEach((dataset) => {
+      dataset.data.pop();
+    });
+
+    this.skillRatingChart.data.datasets = [
+      ...Object.keys(this.skillsRating[desig]).map((skillKey, i) => {
+        return this.getDataInstance(skillKey, this.skillsRating[desig][skillKey].largest, i);
+      }),
+    ];
+
+    this.skillRatingChart.update();
 
   }
 

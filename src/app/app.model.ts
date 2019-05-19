@@ -1,6 +1,6 @@
 export interface Feedback {
   managerBehaviour: string[];
-  managerSkills: { name: string, value: boolean }[];
+  managerSkills: { name: string, value: string }[];
   personalDetails: {
     company: string;
     industry: string;
